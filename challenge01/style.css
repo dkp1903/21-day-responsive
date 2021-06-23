@@ -32,6 +32,7 @@ body {
   /*height: 300px;*/
 }
 
+/*Remember - the mistake was changing the padding-right. Instead, we have to change the width of the content*/
 .intro-content {
-	padding-right: 40%;
+  width: 50%;
 }
