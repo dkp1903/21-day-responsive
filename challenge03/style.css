@@ -1,47 +1,44 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
-      Solution : Create a new intro div to apply the background and padding.
-      The original container class will be applied to both pieces of text. Thus, they both will have the same
-      width and will be centered.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-      The max width property on .container ensures this
-      Note how we made it a lil bit structured by not creating a new class for the white bg text
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
-
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+  
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
 }
 
-.intro {
-  background: #23424a;
-  color: white;
-  padding: 50px 0;
-
+h1{
+  font-size: 3rem;
+}
+.hero {
+  background-color: #23424A;
+  color: #FFF;
+  padding: 100px 0;
 }
 
+.hero__text {
+  width: 60%;
+}
 .container {
   width: 80%;
-  max-width: 750px;
-  margin: 0 auto; 
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.intro-content {
-  width: 50%;
+.hero p {
+  margin-bottom: 3em;
+}
+.btn {
+  display: inline-block;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #23424A;
 }
